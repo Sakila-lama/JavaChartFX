@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="550.0" prefWidth="800.0" styleClass="pane"
+            xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.javachartfx.TableChartController">
+    <children>
+        <Button fx:id="chartViewBtn" layoutX="630.0" layoutY="494.0" mnemonicParsing="false"
+                onAction="#switchToChartView" prefHeight="30.0" prefWidth="120.0" text="Graph View"/>
+        <Button fx:id="loadAllDataBtn" layoutX="480.0" layoutY="494.0" mnemonicParsing="false"
+                onAction="#loadAllDataFromDB" prefHeight="30.0" prefWidth="120.0" text="Load All Data"/>
+        <TableView fx:id="globalTableView" layoutX="300.0" layoutY="90.0" prefHeight="400.0" prefWidth="700.0"
+                   AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0"/>
+        <Label layoutX="170.0" layoutY="31.0" styleClass="top-label" text="Global data on sustainable energy"/>
+    </children>
+</AnchorPane>
